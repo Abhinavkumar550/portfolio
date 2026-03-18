@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Kumar | Portfolio</title>
+    <meta name="description" content="Portfolio of Abhinav Kumar, Data Analyst">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Background Animation Elements -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AK.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education & Extras</a></li>
+                <li><a href="#contact" class="btn-contact">Contact Me</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="greeting">Hi, my name is</p>
+                <h1 class="glitch-text" data-text="Abhinav Kumar">Abhinav Kumar</h1>
+                <h2 class="typewriter"><span id="typed-text"></span><span class="cursor">|</span></h2>
+                <p class="hero-desc">
+                    I'm a passionate developer focused on building scalable, efficient, and visually appealing applications. 
+                    I enjoy tackling complex problems using a modern tech stack.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="https://drive.google.com/file/d/1-ZgzO5xjykm3tlV-lZy3z6a8WDEtFP47/view" class="btn secondary-btn" download>Download CV</a>
+                </div>
+                <div class="social-links hero-socials">
+                    <a href="https://github.com/Abhinavkumar550" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/abhinav-kumar-81abh/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:abhinavkumar80455@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-card glass-card reveal">
+                    <div class="card-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code class="language-javascript">
+const developer = {
+    name: "Abhinav Kumar",
+    title: "Data Analyst",
+    skills: ["C++", "Python", "JavaScript", "React"],
+    hardWorker: true,
+    problemSolver: true,
+    hireable: function() {
+        return this.hardWorker && this.problemSolver;
+    }
+};
+console.log(developer.hireable()); // true
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="highlight">01.</span> My Skills</h2>
+            
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-category glass-card reveal">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="skill-category glass-card reveal delay-1">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks & UI</h3>
+                    <div class="skill-tags">
+                        <span class="tag">HTML & CSS</span>
+                        <span class="tag">React</span>
+                    </div>
+                </div>
+
+                <!-- Tools/Platforms -->
+                <div class="skill-category glass-card reveal delay-2">
+                    <h3><i class="fas fa-database"></i> Tools & DBs</h3>
+                    <div class="skill-tags">
+                        <span class="tag">MySQL</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Git</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category glass-card reveal delay-3">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Problem Solving</span>
+                        <span class="tag">Leadership</span>
+                        <span class="tag">Project Management</span>
+                        <span class="tag">Adaptability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="highlight">02.</span> Featured Projects</h2>
+            
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
+                        <h3 class="project-title"><a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank" style="color: inherit;">Traffic Accident Severity Prediction</a></h3>
+                        <p class="project-date">Oct - Jan 2025</p>
+                        <div class="project-description">
+                            <p>Built a machine learning model to classify accident severity levels using real-world traffic incident data. Performed data preprocessing, feature engineering, and exploratory analysis to identify key risk factors. Implemented and compared multiple ML algorithms (Logistic Regression, Random Forest) to improve prediction accuracy and visualized results for decision insights.</p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>Machine Learning</li>
+                            <li>Scikit-Learn</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank" aria-label="Github Link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card reverse reveal">
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
+                        <h3 class="project-title"><a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank" style="color: inherit;">CPU SCHEDULLING SIMULATOR</a></h3>
+                        <p class="project-date">Sep - Dec 2024</p>
+                        <div class="project-description">
+                            <p>CPU Scheduler Simulator is a powerful and interactive tool designed to simulate and analyze various CPU scheduling algorithms. It provides real-time visualizations, Gantt charts, and performance metrics to help users understand how different scheduling techniques work.
+
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>Tkinter</li>
+                            <li>Matplotlib</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank" aria-label="Github Link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="highlight">03.</span> Experience</h2>
+            
+            <div class="timeline reveal">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3><a href="YOUR_SUMMER_TRAINING_CERTIFICATE_LINK_HERE" target="_blank" style="color: inherit;">Summer Training in DSA & C++ <i class="fas fa-external-link-alt" style="font-size: 0.8rem; margin-left: 5px; color: var(--accent);"></i></a></h3>
+                            <span class="timeline-date">June - July 2025</span>
+                        </div>
+                        <h4>Lovely Professional University</h4>
+                        <div class="timeline-body">
+                            <p class="highlight-text">Project: Power Consumption & Bill Predictor</p>
+                            <ul>
+                                <li>Designed and developed a C++ application to predict electricity bill based on user-defined power usage (day-wise or month-wise).</li>
+                                <li>Utilized Data Structures & Algorithms to efficiently store appliance data, calculate power consumption, and generate optimized bill estimates.</li>
+                                <li>Implemented modular programming, enhanced user-input handling, and ensured accurate real-time cost calculation using predefined tariff slabs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Extras Section -->
+    <section id="education" class="section-padding">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="highlight">04.</span> Education & Achievements</h2>
+            
+            <div class="two-col-layout">
+                <!-- Education -->
+                <div class="layout-col reveal">
+                    <h3 class="sub-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="info-card glass-card mb-4">
+                        <h4>Lovely Professional University</h4>
+                        <p class="location-date">Punjab, India | Since August 2023</p>
+                        <p class="degree">Bachelor of Technology - Computer Science and Engineering</p>
+                        <p class="score">CGPA: 6.5</p>
+                    </div>
+                    <div class="info-card glass-card mb-4">
+                        <h4>H.A.L Vidyalaya School</h4>
+                        <p class="location-date">Kanpur, Uttar Pradesh | April 2021 - March 2022</p>
+                        <p class="degree">Intermediate</p>
+                        <p class="score">Percentage: 78%</p>
+                    </div>
+                    <div class="info-card glass-card">
+                        <h4>H.A.L Vidyalaya School</h4>
+                        <p class="location-date">Kanpur, Uttar Pradesh | April 2019 - March 2020</p>
+                        <p class="degree">Matriculation</p>
+                        <p class="score">Percentage: 76%</p>
+                    </div>
+                </div>
+
+                <!-- Achievements & Certs -->
+                <div class="layout-col reveal delay-1">
+                    <h3 class="sub-title"><i class="fas fa-trophy"></i> Achievements</h3>
+                    <div class="info-card glass-card mb-4">
+                        <ul class="bullet-list">
+                            <li><strong>Code-A-HAUNT – 24 Hours Hackathon</strong> (Sept 2024)<br>Selected for Round 2 (Semifinalist)</li>
+                            <li class="mt-2"><strong>Gold Badge in C++</strong> | HackerRank (Since 2023)</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="sub-title mt-4"><i class="fas fa-certificate"></i> Certificates</h3>
+                    <div class="info-card glass-card">
+                        <ul class="bullet-list">
+                            <li><a href="YOUR_CERTIFICATE_LINK_1_HERE" target="_blank" style="color: inherit;">Cloud Computing by IIT Madras (Aug 2025) <i class="fas fa-external-link-alt" style="font-size: 0.8rem; margin-left: 5px; color: var(--accent);"></i></a></li>
+                            <li class="mt-2"><a href="YOUR_CERTIFICATE_LINK_2_HERE" target="_blank" style="color: inherit;">Data Structure and Algorithm in C++ (Aug 2025) <i class="fas fa-external-link-alt" style="font-size: 0.8rem; margin-left: 5px; color: var(--accent);"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container contact-container reveal">
+            <h2 class="section-title text-center"><span class="highlight">05.</span> What's Next?</h2>
+            <h3 class="contact-heading">Get In Touch</h3>
+            <p class="contact-text">
+                Although I'm focused on my studies and projects, my inbox is always open. 
+                Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            </p>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> +91 7080442542</p>
+                <p><i class="fas fa-envelope"></i> abhinavkumar80455@gmail.com</p>
+            </div>
+            <a href="mailto:abhinavkumar80455@gmail.com" class="btn primary-btn btn-large mt-4">Say Hello</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="social-links footer-socials">
+                <a href="https://github.com/Abhinavkumar550" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abhinav-kumar-81abh/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:abhinavkumar80455@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
